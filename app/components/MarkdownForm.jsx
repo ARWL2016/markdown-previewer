@@ -20,9 +20,7 @@ var MarkdownForm = React.createClass({
             <div>
                 <h2>MarkdownForm</h2>
                 <form onSubmit={this.onFormSubmit} onKeyUp={this.onKeyUp}> 
-                    <textarea ref="input" placeholder="Enter your markdown here"></textarea>
-                    <button>Enter</button>  
-
+                    <textarea ref="input" placeholder="Enter your markdown here"></textarea> 
                 </form> 
             </div> 
         );

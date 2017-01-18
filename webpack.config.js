@@ -21,10 +21,13 @@ module.exports = {
     root: __dirname, 
     alias: {
       Main: 'app/components/Main.jsx', 
+      Nav: 'app/components/Nav.jsx',
       MarkdownPreviewer: 'app/components/MarkdownPreviewer',
       MarkdownForm: 'app/components/MarkdownForm.jsx',
       MarkdownOutput: 'app/components/MarkdownOutput.jsx',
       Examples:'app/components/Examples.jsx',
+      About: 'app/components/About.jsx',
+      UserGuide: 'app/components/UserGuide.jsx', 
       applicationStyles: 'app/styles/app.scss', 
       markdown: 'app/markdown/markdown.js'
     },
