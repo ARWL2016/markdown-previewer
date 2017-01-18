@@ -7,7 +7,7 @@ var MarkdownPreviewer = React.createClass({
     render: function () {
         return (
             <div>
-                <h2>Markdown Previewer Container</h2>
+                <h2>Markdown Previewer Outer Container</h2>
                 <Examples /> 
                 <MarkdownForm />
                 <MarkdownOutput /> 
