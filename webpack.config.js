@@ -2,6 +2,8 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [ 
+     'script!jquery/dist/jquery.min.js',
+    'script!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
     ], 
   externals: {
@@ -27,7 +29,8 @@ module.exports = {
       MarkdownOutput: 'app/components/MarkdownOutput.jsx',
       Examples:'app/components/Examples.jsx',
       About: 'app/components/About.jsx',
-      UserGuide: 'app/components/UserGuide.jsx', 
+      UserGuide: 'app/components/UserGuide.jsx',
+      cssReset: 'app/styles/cssReset.scss', 
       applicationStyles: 'app/styles/app.scss', 
       markdown: 'app/markdown/markdown.js'
     },

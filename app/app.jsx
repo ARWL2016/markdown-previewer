@@ -6,9 +6,14 @@ var MarkdownPreviewer = require('MarkdownPreviewer');
 var About = require('About'); 
 var UserGuide = require('UserGuide'); 
 
+// Load foundation 
+require('style!css!foundation-sites/dist/css/foundation.min.css')
+$(document).foundation(); 
 
 // Load styles 
+// require('style!css!sass!cssReset')
 require('style!css!sass!applicationStyles')
+
 
 ReactDOM.render(
     <Router history={hashHistory}>
