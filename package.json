@@ -4,13 +4,14 @@
   "description": "Project built for Free Code Camp React Challenge",
   "main": "app.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "Alistair Willis",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
+    "marked": "^0.3.6",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.1"
