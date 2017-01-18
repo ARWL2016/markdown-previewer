@@ -25,7 +25,8 @@ module.exports = {
       MarkdownForm: 'app/components/MarkdownForm.jsx',
       MarkdownOutput: 'app/components/MarkdownOutput.jsx',
       Examples:'app/components/Examples.jsx',
-      applicationStyles: 'app/styles/app.scss'
+      applicationStyles: 'app/styles/app.scss', 
+      markdown: 'app/markdown/markdown.js'
     },
     extensions: ['', '.js', '.jsx']
   }, 

@@ -2,11 +2,11 @@ var React = require('react');
 
 var MarkdownForm = React.createClass({  
     onKeyUp: function () {
-        var markdown = this.refs.markdown.value; 
-        console.log('onKeyUp' + markdown);
+        var input = this.refs.input.value; 
+        console.log('onKeyUp' + input);
 
-        if (markdown.length > 0) {
-            this.props.onParse(markdown); 
+        if (input.length > 0) {
+            this.props.onParse(input); 
         }
     },
     componentDidUpdate: function () {
@@ -20,7 +20,7 @@ var MarkdownForm = React.createClass({
             <div>
                 <h2>MarkdownForm</h2>
                 <form onSubmit={this.onFormSubmit} onKeyUp={this.onKeyUp}> 
-                    <textarea ref="markdown" placeholder="Enter your markdown here"></textarea>
+                    <textarea ref="input" placeholder="Enter your markdown here"></textarea>
                     <button>Enter</button>  
 
                 </form> 

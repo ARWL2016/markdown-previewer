@@ -1,13 +1,18 @@
 var React = require('react'); 
+var marked = require('marked'); 
 
 var MarkdownOutput = React.createClass({
+    createMarkup() {
+        return {__html: this.props.output};
+    },
+    
     render: function () {
+        
         return (
-            <div>
-                <h2>MarkdownOutput</h2>
-            </div> 
+                <div dangerouslySetInnerHTML={this.createMarkup()} />  
         );
     }
 });
 
 module.exports = MarkdownOutput; 
+
