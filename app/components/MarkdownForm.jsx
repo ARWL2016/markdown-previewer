@@ -4,39 +4,17 @@ var MarkdownForm = React.createClass({
     onKeyUp: function () {
         var input = this.refs.input.value; 
         console.log('onKeyUp' + input);
-
-        if (input.length > 0) {
-            this.props.onParse(input); 
-        }
-    },
-    componentDidUpdate: function () {
-        console.log('componentDidUpdate');
-    },
-    componentDidMount () {
-        console.log('componentDidMount');
+        this.props.onParse(input); 
     },
     render: function () {
         return (
-            <div>
-                <h2>MarkdownForm</h2>
+            <section>
                 <form onSubmit={this.onFormSubmit} onKeyUp={this.onKeyUp}> 
                     <textarea ref="input" placeholder="Enter your markdown here"></textarea> 
                 </form> 
-            </div> 
+            </section>
         );
     }
 });
 
 module.exports = MarkdownForm; 
-
-
-//DEPRECATED CODE 
-
-    // onFormSubmit: function () {
-    //     var markdown = this.refs.markdown.value; 
-    //     console.log('onFormSubmit' + markdown);
-
-    //     if (markdown.length > 0) {
-    //         this.props.onParse(markdown); 
-    //     }
-    // },

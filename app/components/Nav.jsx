@@ -7,7 +7,11 @@ var Nav = React.createClass({
             <div className="top-bar">
                 <div className="top-bar-left">
                     <ul className="menu">
-                        <li className="menu-text">Markdown Previewer</li>
+                        <li className="menu-text">Markdown Previewer</li>   
+                    </ul>
+                </div>
+                <div className="top-bar-right">
+                    <ul className="menu">
                         <li>
                             <IndexLink to="/" className="navLink" activeStyle={{textDecoration: 'underline'}}>Preview</IndexLink>
                         </li>

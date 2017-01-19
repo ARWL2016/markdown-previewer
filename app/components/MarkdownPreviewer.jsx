@@ -7,16 +7,14 @@ var markdown = require('markdown');
 var MarkdownPreviewer = React.createClass({
     getInitialState: function () {
         return {
-            output: "initial output"
+            output: "See your converted markdown here"
         }
     },
     handleParse: function (input) {
         this.setState({
             input: input
         })
-        console.log('handleParse: ' + input); 
         var output = markdown.markdownCompile(input);
-        console.log('Output: ' + output);
         this.setState({
             output: output
         })
@@ -24,12 +22,19 @@ var MarkdownPreviewer = React.createClass({
     render: function () {
         var {output} = this.state; 
         return (
-            <div>
-                <h2>Markdown Previewer Outer Container</h2>
-                <Examples /> 
-                <MarkdownForm onParse={this.handleParse} />
-                <MarkdownOutput output={output}/> 
-            </div> 
+            <main>
+                <div className="row" >
+                    <div className = "medium-4 small-12 columns front-page" id="examplesDiv">
+                        <Examples /> 
+                    </div>
+                    <div className = "medium-4 small-12 columns front-page" id="formDiv">
+                        <MarkdownForm onParse={this.handleParse} />
+                    </div>
+                    <div className = "medium-4 small-12 columns end front-page" id="outputDiv">
+                        <MarkdownOutput output={output}/> 
+                    </div>
+                </div> 
+            </main>
         );
     }
 });

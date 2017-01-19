@@ -4,7 +4,7 @@ var UserGuide = React.createClass({
     render: function () {
         return (
             <div>
-                <h1 className="text-center page-title">UserGuide</h1>
+                <h1 className="text-center page-title">User Guide</h1>
                 <table>
                     <thead>
                         <tr>

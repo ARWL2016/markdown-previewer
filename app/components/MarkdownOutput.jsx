@@ -6,7 +6,9 @@ var MarkdownOutput = React.createClass({
     },   
     render: function () {  
         return (
+            <section>
                 <div dangerouslySetInnerHTML={this.createMarkup()} />  
+            </section>
         );
     }
 });
