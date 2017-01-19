@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     line-height: 1.5em; 
 }
 textarea {
@@ -7,9 +7,6 @@ textarea {
     width: 400px; 
 }
 
-h1 {
-    font-size: 2em; 
-}
 
 #main {
     padding:20px; 
@@ -17,5 +14,18 @@ h1 {
 
 p {
     font-size: 1.1em; 
+}
+
+table {
+    width: 70%; 
+    margin: 0 auto;
+}
+
+
+
+.page-title {
+    font-size: 2em; 
+    margin-top: 15px; 
+    margin-bottom: 20px; 
 }
 
